@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    font-family: Founders Grotesk XCondensed, sans-serif;
+}
+
+.header{
+    padding-left: 10px;
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-trading{
+    width: 100%;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #337ab7;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.ua{
+    background: none;
+    border: 2px solid #337ab7;
+    height: 26px;
+}
+
+.ua1{
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.bulb{
+    max-width: 600px;
+    height: 400px;
+}
+
+.about-company-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 691px) {
+    .about-company-text{
+        width: 80%;
+    }
+}
+
+.container-doc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.docs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.container-photo{
+    max-width: 500px;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pdf{
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.photo-doc{
+    max-width: 500px;
+    width: 100%;
+    height: 150px;
+}
+
+.link-on{
+    width: 300px;
+    height: 400px;
+}
+
+.box-link{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.container-link{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.link-on-site{
+    text-decoration: none;
+    color: black;
+}
+
+.footer{
+    background: #337ab7;
+    padding: 30px;
+    color: #FFFFFF;
+}
+
+.text-foot{
+    font-weight: 700;
+}
+
+.mail,
+.location,
+.phone,
+.schedule{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+}
+
+.phone{
+    margin-top: 10px;
+}
+
+.button{
+    height: 30px;
+    background: none;
+    border: 2px solid #337ab7;
+    cursor: pointer;
+    color: #337ab7;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.link-mail-phone{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.name{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #337ab7;
+}
+
+h1{
+    color: #337ab7;
+}
