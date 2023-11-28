@@ -8,12 +8,29 @@
 <body>
 <div class="header">
     <p class="name">ТОВ «ВАТТ ПОСТАЧАННЯ»</p>
-    <div class="lang-buttons">
-        <button class="ua"><a class="ua1" href="#">UA</a></button>
-        <button class="ua"><a class="ua1" href="english-version.html">EN</a></button>
+<!--    <div class="lang-buttons">-->
+<!--        <button class="ua"><a class="ua1" href="#">UA</a></button>-->
+<!--        <button class="ua"><a class="ua1" href="english-version.html">EN</a></button>-->
+<!--    </div>-->
+<!--    <button class="openbtn" onclick="openNav()">☰</button>-->
+    <div id="main" class="container-menu">
+        <div class="lang-buttons">
+            <button class="ua"><a class="ua1" href="#">UA</a></button>
+            <button class="ua"><a class="ua1" href="english-version.html">EN</a></button>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰</button>
     </div>
 </div>
-<div class="container-trading">
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#aboutCompany">Про компанію</a>
+    <a href="#documentsAboutCompany">Уставні документи</a>
+    <a href="#links">Важливі ВЕБ-посилання</a>
+    <a href="#base">Нормативно-правова база</a>
+    <a href="#safe">Повідомлення про загрозу електробезпеці</a>
+    <a href="#contact">Контакти</a>
+</div>
+<div class="container-trading" id="aboutCompany">
     <img class="bulb" src="images/bulb-153200_1280.png" alt="bulb">
     <div class="about-company-text">
         <h1>ПРО КОМПАНІЮ</h1>
@@ -24,18 +41,33 @@
         </p>
     </div>
 </div>
-<div class="container-doc">
-    <h1>Уставні документи</h1>
+<div class="container-doc" id="documentsAboutCompany">
+    <h1>Документи про компанію</h1>
     <div class="docs">
+<!--        <div class="container-photo">-->
+<!--            <img class="photo-doc" src="images/v1.png" alt="photo-doc">-->
+<!--            <button class="button">-->
+<!--                <a class="pdf" href="images/vipiska-wat.pdf" download>Завантажити PDF</a>-->
+<!--            </button>-->
+<!--        </div>-->
         <div class="container-photo">
-            <img class="photo-doc" src="images/v1.png" alt="photo-doc">
+            <img class="photo-doc" src="images/v1.png" alt="photo-doc2">
+            <p class="text-write">Виписка</p>
             <button class="button">
                 <a class="pdf" href="images/vipiska-wat.pdf" download>Завантажити PDF</a>
             </button>
         </div>
+        <div class="container-photo">
+            <img class="photo-doc" src="images/watt-supply_photo.png" alt="photo-doc2">
+            <p class="text-write">Інформація щодо вирішення спорів та порядку подання споживачами звернень, скарг,
+                претензій</p>
+            <button class="button">
+                <a class="pdf" href="images/Informatsiya_shchodo_poryadku_podannya_spozhyvachamy_zvernen,_skarh.pdf" download>Завантажити PDF</a>
+            </button>
+        </div>
     </div>
 </div>
-<div class="link">
+<div class="link" id="links">
     <h1>Важливі ВЕБ-посилання</h1>
     <div class="box-link">
         <a class="link-on-site" href="https://www.nerc.gov.ua/">
@@ -58,7 +90,131 @@
         </a>
     </div>
 </div>
-<div class="footer">
+<div class="link1" id="base">
+    <h1 class="text-h1">Нормативно-правова база</h1>
+    <div class="container-link1">
+        <div class="vertmenu">
+            <ul>
+                <li>
+                    <a href="#">Нормативно-правова база</a>
+                    <input type="checkbox" class="subCat" id="4"/>
+                    <label class="chka" for="4"></label>
+                    <ul style="display:none">
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/393/96-%D0%B2%D1%80#Text">1. Закон України Про
+                            звернення громадян</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/2939-17#Text">2. Закон України Про доступ до
+                            публічної інформації</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/2297-17#Text">3. Закон України Про захист
+                            персональних даних</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/1023-12#Text">4. Закон України Про захист прав
+                            споживачів</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/2019-19#Text">5. Закон України Про ринок
+                            електричної енергії</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/v0312874-18#Text">6. Поставова НКРЕКП №312 Про
+                            затвердження Правил роздрібного ринку електричної
+                            енергії</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/z1143-06#Text">7. Наказ Міністерство палива та
+                            енергетики України</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/1540-19#Text">8. Закон України Про Національну
+                            комісію, що здійснює державне регулювання у
+                            сферах енергетики та комунальних послуг</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/v0307874-18#Text">9. Постанова НКРЕКП №307 Про
+                            затвердження Правил ринку</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/v0308874-18#Text">10. Постанова НКРЕКП №308 Про
+                            затвердження Правил ринку «на добу наперед» та
+                            внутрішньодобового ринку</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/v0309874-18#Text">11. Постанова НКРЕКП №309 Про
+                            затвердження Кодексу системи передачі</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/v0310874-18#Text">12. Постанова НКРЕКП №310 Про
+                            затвердження Кодексу систем розподілу</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/v0311874-18#Text">13. Постанова НКРЕКП №311 Про
+                            затвердження Кодексу комерційного обліку
+                            електричної енергії</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/v0312874-18#Text">14. Постанова НКРЕКП №312 Про
+                            затвердження Правил роздрібного ринку електричної
+                            енергії</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/v1469874-17#Text">15. Постанова НКРЕКП №1469
+                            Про затвердження Ліцензійних умов провадження
+                            господарської діяльності з постачання електричної енергії споживачу</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/rada/show/v0766874-20#Text">16. Постанова НКРЕКП №766 Про
+                            дії учасників ринку електричної енергії у період
+                            дії карантину та обмежувальних заходів, пов’язаних із поширенням коронавірусної хвороби
+                            (COVID-19)</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/483-2019-%D0%BF#n9">17. Положення про
+                            покладення спеціальних обов’язків на учасників ринку
+                            електричної енергії для забезпечення загальносуспільних інтересів у процесі функціонування
+                            ринку електричної енергії</a></li>
+                        <li><a href="https://zakon.rada.gov.ua/laws/show/v0375874-18#Text">18. Постанова НКРЕКП №375 Про
+                            затвердження Порядку забезпечення стандартів
+                            якості електропостачання та надання компенсації споживачам за їх недотримання</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="link1" id="safe">
+    <h1 class="text-h1">Енергобезпека</h1>
+    <div class="container-link1">
+        <div class="vertmenu">
+            <ul>
+                <li>
+                    <a href="#">Порядок надання повідомлень про загрозу електробезпеці споживачів:
+                    </a>
+                    <input type="checkbox" class="subCat" id="5"/>
+                    <label class="chka" for="5"></label>
+                    <ul style="display:none">
+                        <li>
+                            <p><strong>І. Дії працівників або свідків нещасного випадку чи аварії яка становить загрозу
+                                електробезпеці</strong></p>
+                            <ol>
+                                <li><strong>Строк подачі інформації:</strong> Негайно</li>
+                                <li><strong>Кому подається інформація:</strong> Для працівників – безпосередній керівник
+                                    працівника або інша уповноважена особа на підприємстві. Для споживачів –
+                                    зателефонувати за номером: +38 067 824 77 73.
+                                </li>
+                                <li><strong>Порядок дій:</strong> У випадку виявлення подій, які становлять загрозу
+                                    електробезпеці людей, тварин або можуть призвести до системних збоїв у роботі
+                                    обладнання чи аварій на виробництві, необхідно негайно перш за все самому тримати
+                                    безпечну відстань від місця події, сповістити оточуючих про небезпеку, запобігти
+                                    наближенню до місця аварії випадкових перехожих чи тварин та повідомити про те, що
+                                    сталося через засоби зв'язку або нарочним безпосереднього керівника або іншої
+                                    уповноваженої особи на підприємстві. Для споживачів – зателефонувати за номером: +38
+                                    067 824 77 73.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p><strong>ІІ. Дії керівників або інших уповноважених осіб на підприємстві у разі отримання
+                                повідомлення про нещасний випадок чи аварію яка становить загрозу
+                                електробезпеці</strong></p>
+                            <ol>
+                                <li><strong>Строк подачі інформації:</strong> Негайно</li>
+                                <li><strong>Кому подається інформація:</strong> У разі пожежі на об’єктах – повідомити
+                                    за допомогою засобів зв'язку відділ цивільного захисту, пожежної безпеки та
+                                    мобілізаційної роботи, чергового диспетчера РЕМ, ОДС, тел. 101.
+                                </li>
+                                <li><strong>Порядок дій:</strong> Керівники на місцях перш за все повинні оцінити
+                                    ситуацію і визначити наслідки від настання нещасного випадку або інших подій, які
+                                    становлять загрозу електробезпеці, організувати за необхідності надання першої
+                                    медичної допомоги, прийняти невідкладні заходи по недопущенню подібних подій.
+                                </li>
+                            </ol>
+                        </li>
+                        <div>
+                            <p>Для надання повідомлення про загрозу електробезпеці необхідно зателефонувати за номером:
+                                +38
+                                067 824 77 73, та повідомити на електронну пошту <a href="mailto:watt-supply@ukr.net">watt-supply@ukr.net</a>.
+                            </p>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer" id="contact">
     <h1>Контакти</h1>
     <div class="container-footer">
         <p class="text-foot">ТОВ «Ватт Постачання» (код ЄДРПОУ - 45343097)
@@ -71,7 +227,7 @@
         </div>
         <div class="mail">
             <img src="images/free-icon-envelope-481659.png" alt="mail">
-            <a class="link-mail-phone" href="mailto:watt-trading@ukr.net">watt-supply@ukr.net</a>
+            <a class="link-mail-phone" href="mailto:watt-supply@ukr.net">watt-supply@ukr.net</a>
         </div>
         <div class="phone">
             <img src="images/free-icon-vector-icon-11084539.png" alt="phone">
@@ -79,11 +235,11 @@
         </div>
         <div class="schedule">
             <img class="link-mail-phone" src="images/free-icon-schedule-1154553.png">
-            <p>Графік роботи: 10-19 годин пн - пт</p>
+            <p>Графік роботи: Понеділок – П’ятниця з 10:00 год. до 19:00 год.; вихідні: субота – неділя</p>
         </div>
 
     </div>
 </div>
-
+<script src="script.js"></script>
 </body>
 </html>
